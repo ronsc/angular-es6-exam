@@ -7,7 +7,6 @@ import mainModule from './main';
 
 
 angular.element(document).ready(function() {
-	angular.bootstrap(document, [mainModule.name], {
-		strictDi: true
-	});
+	let body = document.getElementsByTagName("body")[0];
+	angular.bootstrap(body, [mainModule.name]);
 });

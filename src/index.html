@@ -4,8 +4,16 @@
 	<meta charset="UTF-8">
 	<title>app01</title>
 </head>
-<body>
+<body ng-cloak>
 	
+	<div ng-controller="MainController as vm">
+		{{vm.name}}
+	</div>
 	
+	<script src="jspm_packages/system.js"></script>
+	<script src="jspm.conf.js"></script>
+	<script>
+		System.import('src/app/app.js');
+	</script>
 </body>
 </html>
